@@ -10,6 +10,7 @@ public class EasyBotPlayingStrategy implements BotPLayingStrategy {
             for(int j=0;j<dimension;j++){
                 if(board.getBoard().get(i).get(j).getCellStatus().equals(CellStatus.EMPTY)){
                     board.getBoard().get(i).get(j).setCellStatus(CellStatus.FILLED);
+                    board.getBoard().get(i).get(j).setPlayer(player);
                     return new Move(player,board.getBoard().get(i).get(j));
                 }
             }

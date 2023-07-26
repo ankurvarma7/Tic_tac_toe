@@ -39,10 +39,6 @@ public class OrderOneGameWinningStrategy implements WinningStrategy{
         }
         rowSymbolCount.get(row).computeIfPresent(symbol,(key,val)->val+1);
 
-        if(!rowSymbolCount.get(row).containsKey(symbol)){
-            rowSymbolCount.get(row).put(symbol,0);
-        }
-        rowSymbolCount.get(row).computeIfPresent(symbol,(key,val)->val+1);
 
         if(!colSymbolCount.get(col).containsKey(symbol)){
             colSymbolCount.get(col).put(symbol,0);

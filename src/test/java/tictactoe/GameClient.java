@@ -31,7 +31,7 @@ public class GameClient {
 
             //String difficultyLevel=sc.next();
 
-            players.add(new Bot(botName,symbol.charAt(0), BotDifficultyLevel.EASY));
+            players.add(new Bot(botName,symbol.charAt(0),BotDifficultyLevel.EASY));
         }
 
         for(int i=0;i<numberOfPlayers;i++){
