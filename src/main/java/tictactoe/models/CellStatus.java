@@ -1,2 +1,6 @@
-package tictactoe.models;public enum CellStatus {
+package tictactoe.models;
+
+public enum CellStatus {
+    EMPTY,
+    FILLED;
 }

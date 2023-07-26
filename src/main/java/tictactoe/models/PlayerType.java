@@ -1,2 +1,6 @@
-package tictactoe.models;public class PlayerType {
+package tictactoe.models;
+
+public enum PlayerType {
+    HUMAN,
+    BOT;
 }
